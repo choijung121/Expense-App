@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 
-import './ExpenseForm.css'
+import './ExpenseForm.css';
 
 function ExpenseForm(props) {
     const [enteredTitle, setEnteredTitle] = useState(''); 
@@ -23,7 +23,9 @@ function ExpenseForm(props) {
         //     enteredTitle: event.target.value, 
         // });
 
-        /* will recieve previous state in the object state. React guarantees schedules state updates that latest snapshot keeping all schedule updates in mind. 
+        /* will recieve previous state in the object state. 
+        React guarantees schedules state updates that latest snapshot 
+        keeping all schedule updates in mind. 
         So this is the safer way to have updated state snapshot. 
         If your state depends on the previous state, use this type of function */
         // setUserInput((prevState) => {
@@ -86,8 +88,8 @@ function ExpenseForm(props) {
                     <input 
                         type="date" 
                         value={enteredDate }
-                        min='2022-01-01'  
-                        max='2024-01-01' 
+                        min='1990-01-01'  
+                        max='2200-01-01' 
                         onChange={dateChangeHandler} />
                 </div> 
             </div>
